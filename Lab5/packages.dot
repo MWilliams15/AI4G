@@ -1,0 +1,21 @@
+digraph "packages" {
+charset="utf-8"
+rankdir=BT
+"0" [label="agent", shape="box"];
+"1" [label="graphics", shape="box"];
+"2" [label="main", shape="box"];
+"3" [label="matrix33", shape="box"];
+"4" [label="point2d", shape="box"];
+"5" [label="vector2d", shape="box"];
+"6" [label="world", shape="box"];
+"0" -> "1" [arrowhead="open", arrowtail="none"];
+"0" -> "5" [arrowhead="open", arrowtail="none"];
+"2" -> "0" [arrowhead="open", arrowtail="none"];
+"2" -> "1" [arrowhead="open", arrowtail="none"];
+"2" -> "5" [arrowhead="open", arrowtail="none"];
+"2" -> "6" [arrowhead="open", arrowtail="none"];
+"5" -> "4" [arrowhead="open", arrowtail="none"];
+"6" -> "1" [arrowhead="open", arrowtail="none"];
+"6" -> "3" [arrowhead="open", arrowtail="none"];
+"6" -> "5" [arrowhead="open", arrowtail="none"];
+}

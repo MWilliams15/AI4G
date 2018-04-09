@@ -1,0 +1,6 @@
+digraph "classes" {
+charset="utf-8"
+rankdir=BT
+"0" [label="{Action|\l|AlleviatesGoal()\lGetActionDescription()\lGetDiscontent()\lPerformAction()\l}", shape="record"];
+"1" [label="{Goal|\l|GetGoalInsistance()\lGetGoalName()\lUpdateGoalInsistance()\l}", shape="record"];
+}

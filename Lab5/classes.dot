@@ -1,0 +1,21 @@
+digraph "classes" {
+charset="utf-8"
+rankdir=BT
+"0" [label="{Agent|DECELERATION_SPEEDS : dict\lacceleration\lcolor : str\lheading\lmass : float\lmax_speed : float\lmode : str\lpos\lscale\lside\lvehicle_shape : list\lvel\lworld : NoneType\l|arrive()\lcalculate()\lflee()\lpursuit()\lrender()\lseek()\lspeed()\lupdate()\l}", shape="record"];
+"1" [label="{EasyGraphics|curr_color : NoneType\lpen_color : tuple\lqobj\lstroke : float\ltext : Text\lwindow\l|InitWithPyglet()\laqua_pen()\lblack_pen()\lblue_pen()\lcircle()\lclosed_shape()\lcross()\ldot()\lgreen_pen()\lgrey_pen()\lline()\lline_by_pos()\lline_with_arrow()\lorange_pen()\lpolyline()\lrect()\lred_pen()\lset_pen_color()\lset_stroke()\ltext_at_pos()\ltext_color()\lwhite_pen()\l}", shape="record"];
+"2" [label="{Matrix33|\l|reset()\lrotate()\lrotate_by_vectors()\lrotate_by_vectors_update()\lrotate_update()\lscale()\lscale_update()\ltransform_vector2d()\ltransform_vector2d_list()\ltranslate()\ltranslate_update()\l}", shape="record"];
+"3" [label="{Point2D|x : float\ly : float\l|copy()\l}", shape="record"];
+"4" [label="{Vector2D|x : float\ly : float\l|copy()\ldistance()\ldistanceSq()\ldot()\lget_normalised()\lget_reverse()\lis_zero()\llength()\llengthSq()\lnormalise()\lperp()\lreflect()\lsign()\ltruncate()\lzero()\l}", shape="record"];
+"5" [label="{World|agents : list\lcx\lcy\lhunter : NoneType\lpaused : bool\lshowinfo : bool\ltarget\l|render()\ltransform_points()\lupdate()\lwrap_around()\l}", shape="record"];
+"4" -> "0" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="pos", style="solid"];
+"4" -> "0" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="vel", style="solid"];
+"4" -> "0" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="heading", style="solid"];
+"4" -> "0" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="heading", style="solid"];
+"4" -> "0" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="side", style="solid"];
+"4" -> "0" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="side", style="solid"];
+"4" -> "0" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="scale", style="solid"];
+"4" -> "0" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="acceleration", style="solid"];
+"4" -> "0" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="acceleration", style="solid"];
+"4" -> "5" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="target", style="solid"];
+"4" -> "5" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="target", style="solid"];
+}
